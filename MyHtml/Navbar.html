@@ -18,7 +18,7 @@
 <style>
 
   .navbar{
-    background-color:#19283f
+    background-color:#2b394e;
   }
   .navbar-brand{
     color: white;
@@ -137,10 +137,19 @@ width: 100px;
  
   
 }
-.card-body{
+.blog{
   padding: 0%;
   text-align: center;
   
+}
+
+.Luke{
+  filter: grayscale(100%) blur(1px) ;
+  
+}
+.card:hover .Luke{
+  filter: grayscale(0%) blur(0px) ;
+  transition: all ease 180ms;
 }
 /* .img-thumbnail:hover{
   filter: blur(5px);
@@ -321,40 +330,95 @@ background-color: red;
       <h2 class="my-3">Meet The Team</h2>
       <p class="text-body-tertiary text-center" >Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p> 
     </div>
-    <div class="container card-group gap-5 mt-4">
+    <div class="container card-group gap-5 mt-4 mb-5">
       <div class="card ">
-        <img src="/MyHtml/img/team-1.png" class="card-img-top" alt="...">
-        <div class="card-body">
+        <img src="/MyHtml/img/team-1.png" class="card-img-top Luke" alt="...">
+        <div class="card-body blog">
           <h5 class="card-title p-3 text-light">Luke Skywalker</h5>
           <p class="card-text p-3 text-body-secondary fw-medium">“I don't understand how we got by those troops. I thought we were dead.“</p>
         </div>
       </div>
       <div class="card">
-        <img src="/MyHtml/img/team-2.png" class="card-img-top" alt="...">
-        <div class="card-body">
+        <img src="/MyHtml/img/team-2.png" class="card-img-top Luke" alt="...">
+        <div class="card-body blog">
           <h5 class="card-title p-3 text-light">Luke Skywalker</h5>
           <p class="card-text p-3 text-body-secondary fw-medium">“I don't understand how we got by those troops. I thought we were dead.“</p>
         </div>
       </div>
       <div class="card ">
-        <img src="/MyHtml/img/team-3.png" class="card-img-top" alt="...">
-        <div class="card-body d-flex flex-column ">
+        <img src="/MyHtml/img/team-3.png" class="card-img-top Luke" alt="...">
+        <div class="card-body blog ">
           <h5 class="card-title p-3 text-light">Luke Skywalker</h5>
           <p class="card-text p-3 text-body-secondary fw-medium">“I don't understand how we got by those troops. I thought we were dead.“</p>
         </div>
       </div>
       <div class="card">
-        <img src="/MyHtml/img/team-4.png" class="card-img-top" alt="...">
-        <div class="card-body">
+        <img src="/MyHtml/img/team-4.png" class="card-img-top Luke" alt="...">
+        <div class="card-body blog">
           <h5 class="card-title p-3 text-light">Luke Skywalker</h5>
           <p class="card-text p-3 text-body-secondary fw-medium">“I don't understand how we got by those troops. I thought we were dead.“</p>
         </div>
       </div>
     </div>
+
     
       
   </div>
-  
-
+  <div class="container mt-5 mb-5">
+    <div class=" d-flex justify-content-around gap-5 ">
+      <img class="h-25"  src="/MyHtml/img/tech-1.png" alt="" srcset="">
+      <img class="h-25" src="/MyHtml/img/tech-2.png" alt="" srcset="">
+      <img class="h-25" src="/MyHtml/img/tech-3.png" alt="" srcset="">
+      <img class="h-25" src="/MyHtml/img/tech-4.png" alt="" srcset="">
+      <img class="h-25" src="/MyHtml/img/tech-2.png" alt="" srcset="">
+      <img class="h-25" src="/MyHtml/img/tech-1.png" alt="" srcset="">
+    </div>
+  </div>
+  <div class=" container-fluid d-flex justify-content-center flex-column align-items-center " style="background-color: #2b394e;">
+        <div class="m-5">
+          <h3 class="text-light text-center mb-3">Start Your Project Now</h3>
+          <h6 class="text-white-50 text-center" >Leave your description and we start the engine.Don't worry,you can cancel anytime</h6>
+        </div>
+        <div>
+          <button type="button" class="btn btn-danger rounded-pill mb-5" id="Buto" style="text-transform:uppercase;">start Project</button>
+        </div>
+  </div>
+  <div class="pt-5 pb-4 bg-body-secondary ">
+    <div class="container text-center mt-5  position-relative">
+      <img src="/MyHtml/title.png" alt="" srcset="">
+      <h1 class="my-3">Read Our Blog</h1>
+      <p class="text-body-tertiary">New Stories</p> 
+      <span class=" line position-absolute "></span>
+    </div>
+    <div class="container card-group gap-5 mt-5 mb-5">
+      <div class="card ">
+        <img src="/MyHtml/img/blog-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><small>Jan 17, 2022</small></p>
+          <p class="card-text fw-semibold">Some Awesome Blog Title Here</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/MyHtml/img/blog-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><small>Jan 17, 2022</small></p>
+          <p class="card-text fw-semibold">Some Awesome Blog Title Here</p>
+        </div>
+      </div>
+      <div class="card ">
+        <img src="/MyHtml/img/blog-3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><small>Jan 17, 2022</small></p>
+          <p class="card-text  fw-semibold">Some Awesome Blog Title Here</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="container  d-flex justify-content-center">
+      <button type="button" class="btn btn-danger rounded-pill mb-5" id="Buto" style="text-transform:uppercase;">More Stories</button>
+    </div>
+    
+      
+  </div>
   </body>
 </html>
