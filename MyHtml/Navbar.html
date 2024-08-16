@@ -16,6 +16,41 @@
 
 </head>
 <style>
+  /* ********************* */
+  
+body {
+  --sb-track-color: #2b394e;
+  --sb-thumb-color: #a3a2ff;
+  --sb-size: 7px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7164e5;
+  
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+    var(--sb-track-color);
+  }
+}
+  /* ********************** */
 
   .navbar{
     background-color:#2b394e;
@@ -150,6 +185,29 @@ width: 100px;
 .card:hover .Luke{
   filter: grayscale(0%) blur(0px) ;
   transition: all ease 180ms;
+}
+.form-control {
+  background-color: transparent;
+  border-radius: 0%;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+.form-control:focus {
+    background-color: transparent;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0 ;
+    color: white;
+}
+.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after {
+    color: white;
+    position: absolute;
+    inset: 1rem 0.375rem;
+    z-index: -1;
+    height: 1.5em;
+    content: "";
+    background-color: transparent;
+   
 }
 /* .img-thumbnail:hover{
   filter: blur(5px);
@@ -391,6 +449,7 @@ background-color: red;
       <span class=" line position-absolute "></span>
     </div>
     <div class="container card-group gap-5 mt-5 mb-5">
+
       <div class="card ">
         <img src="/MyHtml/img/blog-1.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -413,12 +472,26 @@ background-color: red;
         </div>
         
       </div>
+      <div class="container  d-flex justify-content-center">
+        <button type="button" class="btn btn-danger rounded-pill mb-5" id="Buto" style="text-transform:uppercase;">More Stories</button>
+      </div>
     </div>
-    <div class="container  d-flex justify-content-center">
-      <button type="button" class="btn btn-danger rounded-pill mb-5" id="Buto" style="text-transform:uppercase;">More Stories</button>
-    </div>
-    
-      
+
   </div>
+  <div class="container-flui d-flex  justify-content-around" style="background-color: #ffc400;">
+    <div class="container d-flex  align-items-center  row  m-5">
+      <h5 class="text-center col-3  ">Subscribe to our Newsletter:</h5>
+      <div class="form-floating d-flex col-6 ">
+        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" >
+        <label for="floatingInputGrid">Email Adresse</label>
+      </div>
+      <div class="d-flex col-3">
+        <button type="button" class="btn btn-danger rounded-pill" id="Buto" style="text-transform:uppercase;">More Stories</button>
+      </div>
+
+    </div>
+
+
+</div>
   </body>
 </html>
